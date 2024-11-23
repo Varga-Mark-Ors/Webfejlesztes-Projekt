@@ -1,8 +1,7 @@
-package hu.filmdepot.filmsite.model;
+package hu.filmdepot.filmorama.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jdk.jfr.Enabled;
 import lombok.*;
 
 @Builder
@@ -11,15 +10,14 @@ import lombok.*;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-public class Actor {
+public class Movie {
+
     @Id
     @EqualsAndHashCode.Include
-    String idNumber;
+    String movieId;
 
-    String name;
-    String age;
-    Boolean gender;
-
-    double height;
-    int netWorth;
+    String title;
+    int rating;
+    int ageClassified;
+    Genre genre;
 }

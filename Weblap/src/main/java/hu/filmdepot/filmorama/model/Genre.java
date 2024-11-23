@@ -1,4 +1,4 @@
-package hu.filmdepot.filmsite.model;
+package hu.filmdepot.filmorama.model;
 
 public enum Genre {
     ACTION,

@@ -1,6 +1,6 @@
-package hu.filmdepot.filmsite.repository;
+package hu.filmdepot.filmorama.repository;
 
-import hu.filmdepot.filmsite.model.Cast;
+import hu.filmdepot.filmorama.model.Cast;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

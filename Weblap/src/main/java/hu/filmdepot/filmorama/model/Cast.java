@@ -1,9 +1,8 @@
-package hu.filmdepot.filmsite.model;
+package hu.filmdepot.filmorama.model;
 
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Builder

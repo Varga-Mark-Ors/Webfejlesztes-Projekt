@@ -1,6 +1,6 @@
-package hu.filmdepot.filmsite.repository;
+package hu.filmdepot.filmorama.repository;
 
-import hu.filmdepot.filmsite.model.Movie;
+import hu.filmdepot.filmorama.model.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MovieRepository
