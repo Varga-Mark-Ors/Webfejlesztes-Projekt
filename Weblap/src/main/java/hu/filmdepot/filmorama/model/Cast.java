@@ -23,5 +23,5 @@ public class Cast {
     @ManyToOne
     Movie movie;
 
-    String director;
+    //String director;
 }
