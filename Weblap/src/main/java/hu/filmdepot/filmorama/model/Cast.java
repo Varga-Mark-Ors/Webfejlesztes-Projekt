@@ -11,6 +11,7 @@ import java.util.UUID;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
+@Table(name = "movie_cast")
 public class Cast {
 
     @EqualsAndHashCode.Include

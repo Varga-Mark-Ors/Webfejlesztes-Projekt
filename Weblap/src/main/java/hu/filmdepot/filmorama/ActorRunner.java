@@ -2,9 +2,13 @@ package hu.filmdepot.filmorama;
 
 import hu.filmdepot.filmorama.repository.ActorRepository;
 import hu.filmdepot.filmorama.util.FilmoramaUtils;
+import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
+@Component
+@AllArgsConstructor
 @Order(1)
 public class ActorRunner
         implements CommandLineRunner {
