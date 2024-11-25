@@ -6,9 +6,11 @@ import hu.filmdepot.filmorama.repository.CastRepository;
 import hu.filmdepot.filmorama.repository.MovieRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 
 import java.util.stream.Stream;
 
+@Order(2)
 public class CastRunner
         implements CommandLineRunner {
 

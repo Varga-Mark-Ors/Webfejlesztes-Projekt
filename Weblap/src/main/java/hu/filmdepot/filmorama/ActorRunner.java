@@ -3,7 +3,9 @@ package hu.filmdepot.filmorama;
 import hu.filmdepot.filmorama.repository.ActorRepository;
 import hu.filmdepot.filmorama.util.FilmoramaUtils;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 
+@Order(1)
 public class ActorRunner
         implements CommandLineRunner {
 

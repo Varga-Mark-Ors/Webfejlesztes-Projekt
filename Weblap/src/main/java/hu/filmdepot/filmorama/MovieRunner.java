@@ -1,42 +1,41 @@
 package hu.filmdepot.filmorama;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import hu.filmdepot.filmorama.model.Genre;
 import hu.filmdepot.filmorama.model.Movie;
 import hu.filmdepot.filmorama.repository.MovieRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Objects;
+import java.io.InputStream;
+import java.util.List;
 
 @Component
 @AllArgsConstructor
-public class MovieRunner
-        implements CommandLineRunner{
+@Order(1)
+public class MovieRunner implements CommandLineRunner {
 
     private final MovieRepository movieRepository;
 
     @Transactional
     @Override
     public void run(String... args) throws Exception {
-        try(final var br = new BufferedReader(
-                new InputStreamReader(
-                        Objects.requireNonNull(getClass().getResourceAsStream("movies.tsv")))
-        )) {
-            br.lines()
-                    .map(line -> {
-                        final var tokens = line.split("\t");
-                        return Movie.builder()
-                                .movieId(tokens[0])
-                                .title(tokens[1])
-                                .rating(Integer.parseInt(tokens[2]))
-                                .ageClassified(Integer.parseInt(tokens[3]))
-                                .genre(Genre.valueOf(tokens[4]))
-                                .build();
-                    })
+        // Load JSON file
+        try (InputStream is = getClass().getResourceAsStream("movies.json")) {
+            if (is == null) {
+                throw new IllegalArgumentException("movies.json not found in resources");
+            }
+
+            // Parse JSON into a list of Movie objects
+            ObjectMapper mapper = new ObjectMapper();
+            List<Movie> movies = mapper.readValue(is, new TypeReference<List<Movie>>() {});
+
+            // Save each movie to the repository
+            movies.stream()
                     .map(movieRepository::save)
                     .forEach(System.out::println);
         }

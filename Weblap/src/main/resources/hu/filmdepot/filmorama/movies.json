@@ -1,0 +1,12 @@
+[
+  { "movieId": "20220615A", "title": "The Last Defender", "rating": 8, "ageClassified": 12, "genre": "ACTION" },
+  { "movieId": "20211201F", "title": "Whispers of the Sea", "rating": 7, "ageClassified": 7, "genre": "FANTASY" },
+  { "movieId": "20190420R", "title": "Crimson Horizon", "rating": 9, "ageClassified": 18, "genre": "ROMANCE" },
+  { "movieId": "20180831C", "title": "Comedy Royale", "rating": 6, "ageClassified": 6, "genre": "COMEDY" },
+  { "movieId": "20231013A", "title": "Haunted Manor", "rating": 8, "ageClassified": 16, "genre": "ACTION" },
+  { "movieId": "20170122R", "title": "Dreamcatchers", "rating": 5, "ageClassified": 3, "genre": "ROMANCE" },
+  { "movieId": "20191111A", "title": "Heroes Unite", "rating": 9, "ageClassified": 12, "genre": "ACTION" },
+  { "movieId": "20230509F", "title": "Alien Nexus", "rating": 6, "ageClassified": 16, "genre": "FANTASY" },
+  { "movieId": "20220704C", "title": "Mystic Lands", "rating": 7, "ageClassified": 10, "genre": "COMEDY" },
+  { "movieId": "20210918R", "title": "Final Symphony", "rating": 8, "ageClassified": 7, "genre": "ROMANCE" }
+]
