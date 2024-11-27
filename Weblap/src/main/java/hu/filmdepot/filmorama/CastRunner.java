@@ -5,11 +5,8 @@ import hu.filmdepot.filmorama.repository.ActorRepository;
 import hu.filmdepot.filmorama.repository.CastRepository;
 import hu.filmdepot.filmorama.repository.MovieRepository;
 import jakarta.transaction.Transactional;
-import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
-
 import java.util.stream.Stream;
 
 

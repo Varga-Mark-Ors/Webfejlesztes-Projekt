@@ -2,7 +2,6 @@ package hu.filmdepot.filmorama;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hu.filmdepot.filmorama.model.Genre;
 import hu.filmdepot.filmorama.model.Movie;
 import hu.filmdepot.filmorama.repository.MovieRepository;
 import jakarta.transaction.Transactional;
@@ -10,7 +9,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-
 import java.io.InputStream;
 import java.util.List;
 
