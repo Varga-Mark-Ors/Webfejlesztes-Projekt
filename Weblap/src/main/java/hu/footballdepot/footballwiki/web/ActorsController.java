@@ -1,12 +1,12 @@
-package hu.filmdepot.filmorama.web;
+package hu.footballdepot.footballwiki.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import hu.filmdepot.filmorama.model.Actor;
+import hu.footballdepot.footballwiki.model.Player;
 
 import java.util.List;
 
 public interface ActorsController {
 
     @GetMapping("/actor")
-    List<Actor> findAll();
+    List<Player> findAll();
 }

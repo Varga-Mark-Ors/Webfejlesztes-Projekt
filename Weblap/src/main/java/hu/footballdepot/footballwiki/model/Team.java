@@ -1,4 +1,4 @@
-package hu.filmdepot.filmorama.model;
+package hu.footballdepot.footballwiki.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -11,14 +11,15 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Movie {
+public class Team {
 
     @Id
     @EqualsAndHashCode.Include
-    String movieId;
+    String teamId;
 
-    String title;
-    int rating;
-    int ageClassified;
-    Genre genre;
+    String name;
+    String foundationDate;
+    Country country;
+    String city;
+    League league;
 }

@@ -1,4 +1,4 @@
-package hu.filmdepot.filmorama.model;
+package hu.footballdepot.footballwiki.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,8 +11,8 @@ import java.util.UUID;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "movie_cast")
-public class Cast {
+@Table
+public class Contract {
 
     @EqualsAndHashCode.Include
     @Id
@@ -20,9 +20,9 @@ public class Cast {
     UUID id;
 
     @ManyToOne
-    Actor actor;
+    Player player;
     @ManyToOne
-    Movie movie;
+    Team team;
 
-    //String director;
+    int salary;
 }

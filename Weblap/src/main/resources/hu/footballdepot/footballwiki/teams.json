@@ -1,0 +1,67 @@
+[
+  {
+    "teamId": "19000227GMU",
+    "name": "Bayern Munich",
+    "foundationDate": "1900-02-27",
+    "country": "Germany",
+    "city": "Munich",
+    "league": "Bundesliga"
+  },
+  {
+    "teamId": "18780305EMM",
+    "name": "Manchester United",
+    "foundationDate": "1878-03-05",
+    "country": "England",
+    "city": "Manchester",
+    "league": "Premier_League"
+  },
+  {
+    "teamId": "19020306SMR",
+    "name": "Real Madrid",
+    "foundationDate": "1902-03-06",
+    "country": "Spain",
+    "city": "Madrid",
+    "league": "La_Liga"
+  },
+  {
+    "teamId": "19700812FPP",
+    "name": "Paris Saint-Germain",
+    "foundationDate": "1970-08-12",
+    "country": "France",
+    "city": "Paris",
+    "league": "Ligue_1"
+  },
+  {
+    "teamId": "18971101ITJ",
+    "name": "Juventus",
+    "foundationDate": "1897-11-01",
+    "country": "Italy",
+    "city": "Turin",
+    "league": "Seria_A"
+  },
+  {
+    "teamId": "18990503HBF",
+    "name": "Ferencvárosi TC",
+    "foundationDate": "1899-05-03",
+    "country": "Hungary",
+    "city": "Budapest",
+    "league": "Mlsz"
+  },
+  {
+    "teamId": "18920313RCS",
+    "name": "Cluj Stars",
+    "foundationDate": "1892-03-13",
+    "country": "Romania",
+    "city": "Cluj-Napoca",
+    "league": "Mlsz"
+  },
+  {
+    "teamId": "19100322BRS",
+    "name": "Santos FC",
+    "foundationDate": "1910-03-22",
+    "country": "Brazil",
+    "city": "Santos",
+    "league": "Ligue_1"
+  }
+]
+

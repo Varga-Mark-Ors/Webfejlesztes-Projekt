@@ -1,4 +1,4 @@
-package hu.filmdepot.filmorama.model;
+package hu.footballdepot.footballwiki.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,7 +10,7 @@ import lombok.*;
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-public class Actor {
+public class Player {
     @Id
     @EqualsAndHashCode.Include
     String idNumber;
@@ -18,7 +18,7 @@ public class Actor {
     String name;
     String age;
     Boolean gender;
-
+    Country country;
     double height;
     int netWorth;
 }

@@ -1,4 +1,4 @@
-package hu.filmdepot.filmorama;
+package hu.footballdepot.footballwiki;
 
 import lombok.AllArgsConstructor;
 import org.springframework.boot.SpringApplication;
