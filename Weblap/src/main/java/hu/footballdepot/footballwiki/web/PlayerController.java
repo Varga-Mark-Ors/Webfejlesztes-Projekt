@@ -21,7 +21,7 @@ public interface PlayerController {
             @NonNull @RequestBody Player player
     );
 
-    @GetMapping("player/{idNumber}")
+    @GetMapping("/player/{idNumber}")
     void deleteOne(
             @NonNull @PathVariable String idNumber
     );

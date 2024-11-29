@@ -14,7 +14,11 @@ public class PlayerUtils {
     private static final String LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String DIGITS = "0123456789";
     private static final Random RANDOM = new Random();
-    private static final Faker FAKER = new Faker();
+    private static final Faker FAKER;
+
+    static {
+        FAKER = new Faker();
+    }
 
     public static String nextIdNumber(){
         return IntStream.range(0, 9)
@@ -56,16 +60,17 @@ public class PlayerUtils {
     }
 
     public static Player nextPlayer(
-            @NonNull String name,
+            @NonNull String idNumber,
             @NonNull int age,
             @NonNull Boolean gender,
             @NonNull Country country, // Az Enum típust használjuk itt
             @NonNull Double height,
             @NonNull int netWorth) {
 
+        final var name = FAKER.name();
         return Player.builder()
-                .idNumber(nextIdNumber())
-                .name(name)
+                .idNumber(idNumber)
+                .name(name.firstName() + " " + name.lastName())
                 .age(String.valueOf(age))
                 .gender(gender)
                 .country(country) // Az Enum értékét állítjuk be
