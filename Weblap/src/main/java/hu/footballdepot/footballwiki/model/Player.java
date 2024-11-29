@@ -4,12 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
+@With
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Entity
 public class Player {
     @Id
     @EqualsAndHashCode.Include
