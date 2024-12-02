@@ -2,6 +2,7 @@ package hu.footballdepot.footballwiki.web;
 
 import hu.footballdepot.footballwiki.model.Country;
 import hu.footballdepot.footballwiki.model.Player;
+import hu.footballdepot.footballwiki.repository.ContractRepository;
 import hu.footballdepot.footballwiki.repository.PlayerRepository;
 import hu.footballdepot.footballwiki.util.PlayerUtils;
 import lombok.AllArgsConstructor;
@@ -9,6 +10,8 @@ import lombok.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -17,30 +20,34 @@ import java.util.Optional;
 
 @RestController
 @AllArgsConstructor
+@Service
 public class PlayerService implements PlayerController{
 
     private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(PlayerService.class);
 
-    private PlayerRepository repository;
+    private PlayerRepository playerRepository;
+    private ContractRepository contractRepository;
 
     @Override
     public List<Player> findAll() {
         LOGGER.info("findAll");
-        return repository.findAll();
+        return playerRepository.findAll();
     }
 
     @Override
     public Player createOne(@NonNull Player player) {
         LOGGER.info("createOne({})", player);
-        return repository.save(player
+        return playerRepository.save(player
                 .withIdNumber(PlayerUtils.nextIdNumber()));
     }
 
+    @Transactional
     @Override
     public void deleteOne(@NonNull String idNumber) {
 
         LOGGER.info("deleteOne({})", idNumber);
-        repository.deleteById(idNumber);
+        contractRepository.deleteByPlayerIdNumber(idNumber);
+        playerRepository.deleteById(idNumber);
     }
 
     @Override
@@ -48,7 +55,7 @@ public class PlayerService implements PlayerController{
                                @NonNull Optional<String> name,
                                @NonNull Optional<Country> country) {
 
-        return repository.findAll()
+        return playerRepository.findAll()
                 .stream()
                 .filter(player -> idNumber
                         .map(s -> player.getIdNumber().contains(s))
@@ -65,7 +72,7 @@ public class PlayerService implements PlayerController{
     @Override
     public Player findOne(@NonNull String idNumber) {
         LOGGER.info("findOne({})", idNumber);
-        return repository.findById(idNumber)
+        return playerRepository.findById(idNumber)
                 .orElseThrow(() -> new IllegalArgumentException("Player does not exist"));
     }
 }
