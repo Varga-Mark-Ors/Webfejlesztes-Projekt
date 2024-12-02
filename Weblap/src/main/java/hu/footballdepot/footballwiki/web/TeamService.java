@@ -43,4 +43,11 @@ public class TeamService implements TeamController{
                         .orElse(true))
                 .toList();
     }
+
+    @Override
+    public Team findOne(String teamId) {
+        LOGGER.info("Find one team with id {}", teamId);
+        return repository.findById(teamId)
+                .orElseThrow(() -> new IllegalArgumentException("Team does not exist"));
+    }
 }

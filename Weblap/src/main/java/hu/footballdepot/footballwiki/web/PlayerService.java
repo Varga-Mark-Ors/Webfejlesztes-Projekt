@@ -61,4 +61,11 @@ public class PlayerService implements PlayerController{
                         .orElse(true))
                 .toList();
     }
+
+    @Override
+    public Player findOne(@NonNull String idNumber) {
+        LOGGER.info("findOne({})", idNumber);
+        return repository.findById(idNumber)
+                .orElseThrow(() -> new IllegalArgumentException("Player does not exist"));
+    }
 }
