@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Football Wiki (React project) ###
+football-wiki/node_modules/
+football-wiki/build/
