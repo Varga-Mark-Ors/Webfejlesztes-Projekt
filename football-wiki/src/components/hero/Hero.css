@@ -5,7 +5,7 @@
 }
 
 .team-badge{
-    height: 300px;
+    height: 200px;
 }
 
 .team-badge > img {
@@ -32,4 +32,10 @@
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.team-name{
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
 }
