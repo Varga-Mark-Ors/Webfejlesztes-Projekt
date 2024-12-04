@@ -15,7 +15,10 @@ const Hero = ({teams}) => {
                                     <div className= "team-card">
                                         <div className="team-detail">
                                             <div className="team-badge">
-
+                                                <img src= {team.badge} alt=""/>
+                                            </div>
+                                            <div className="team-name"> 
+                                                <h4>{team.name}</h4>
                                             </div>
                                         </div>
                                     </div>
