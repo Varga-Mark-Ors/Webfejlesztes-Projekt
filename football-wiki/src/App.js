@@ -6,6 +6,7 @@ import {Routes, Route} from "react-router-dom";
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import Squad from "./components/squad/Squad";
+import Squads from './components/squads/Squads';
 
 function App() {
   const [teams, setTeams] = useState([]); 
@@ -27,9 +28,10 @@ function App() {
     <div className="App">
       <Header/>
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route path="*" element={<Layout/>}>
           <Route path="/" element={<Home teams={teams}/>}/>
           <Route path="/team/:teamid" element={<Squad teams={teams}/>}/>
+          <Route path="/team" element={<Squads teams={teams} />} />
         </Route>
       </Routes>
     </div>
