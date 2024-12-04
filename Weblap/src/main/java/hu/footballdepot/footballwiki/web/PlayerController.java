@@ -8,6 +8,8 @@ import hu.footballdepot.footballwiki.model.Player;
 import java.util.List;
 import java.util.Optional;
 
+
+@CrossOrigin(origins = "*")
 public interface PlayerController {
 
     @GetMapping("/player")

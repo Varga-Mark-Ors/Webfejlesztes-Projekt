@@ -4,13 +4,12 @@ import hu.footballdepot.footballwiki.model.Country;
 import hu.footballdepot.footballwiki.model.Player;
 import hu.footballdepot.footballwiki.model.Team;
 import lombok.NonNull;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 public interface TeamController {
 
     @GetMapping("/team")
