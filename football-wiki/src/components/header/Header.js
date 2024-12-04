@@ -13,16 +13,16 @@ const Header = () => {
         <Navbar bg = "dark" variant = "dark" expands = "lg">
             <Container fluid>
                 <Navbar.Brand href="/" style={{"color":'gold'}}>
-                    <FontAwesomeIcon icon ={faFutbol} /> Gold 
+                    <FontAwesomeIcon icon ={faFutbol} /> Wiki
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <NavbarCollapse id = "navbarScroll">
-                    <Nav className="me-auto my-2 my-lg-0"
-                        style={{maxHeight:`100px`}}
-                        navbarScroll
-                    >
+                        <Nav className="me-auto my-2 my-lg-0"
+                            style={{maxHeight:`100px`}}
+                            navbarScroll
+                        >
                         <NavLink className="nav-link" to= "/">Home</NavLink>
-                        <NavLink className="nav-link" to= "/">Players</NavLink>
+                        <NavLink className="nav-link" to= "/player">Players</NavLink>
                     </Nav>
                     <Button variant="outline-info" className="me-2">Login</Button>
                     <Button variant="outline-info" className="me-2">Register</Button>
