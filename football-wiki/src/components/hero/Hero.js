@@ -12,7 +12,7 @@ const Hero = ({teams}) => {
                         return(
                             <Paper>
                                 <div className="team-card-container">
-                                    <div className= "team-card">
+                                    <div className= "team-card" style={{"--img": `url(${team.backdrop})`}}>
                                         <div className="team-detail">
                                             <div className="team-badge">
                                                 <img src= {team.badge} alt=""/>

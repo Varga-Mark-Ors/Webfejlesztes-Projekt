@@ -23,4 +23,5 @@ public class Team {
     String city;
     League league;
     String badge;
+    String backdrop;
 }

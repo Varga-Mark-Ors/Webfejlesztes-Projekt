@@ -6,7 +6,8 @@
     "country": "Germany",
     "city": "Munich",
     "league": "Bundesliga",
-    "badge": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png"
+    "badge": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg.png",
+    "backdrop": "https://i.ytimg.com/vi/8rZ5ct3bU5U/maxresdefault.jpg"
   },
   {
     "teamId": "18780305EMM",
@@ -15,7 +16,8 @@
     "country": "England",
     "city": "Manchester",
     "league": "Premier_League",
-    "badge": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png"
+    "badge": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png",
+    "backdrop": "https://i.ytimg.com/vi/l9ewpnREWbw/maxresdefault.jpg"
   },
   {
     "teamId": "19020306SMR",
@@ -24,7 +26,8 @@
     "country": "Spain",
     "city": "Madrid",
     "league": "La_Liga",
-    "badge": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+    "badge": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png",
+    "backdrop": "https://i.ytimg.com/vi/NxOAwbGJnkc/maxresdefault.jpg"
   },
   {
     "teamId": "19700812FPP",
@@ -33,7 +36,8 @@
     "country": "France",
     "city": "Paris",
     "league": "Ligue_1",
-    "badge": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png"
+    "badge": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png",
+    "backdrop": "https://i.ytimg.com/vi/LuaFJ9Zc4uk/maxresdefault.jpg"
   },
   {
     "teamId": "18971101ITJ",
@@ -42,7 +46,8 @@
     "country": "Italy",
     "city": "Turin",
     "league": "Seria_A",
-    "badge": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Juventus_FC_-_pictogram_black_%28Italy%2C_2017%29.svg"
+    "badge": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Juventus_FC_-_pictogram_black_%28Italy%2C_2017%29.svg",
+    "backdrop": "https://i.ytimg.com/vi/QFWgmy_I8Jc/maxresdefault.jpg"
   },
   {
     "teamId": "18990503HBF",
@@ -51,16 +56,8 @@
     "country": "Hungary",
     "city": "Budapest",
     "league": "Mlsz",
-    "badge": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Ferencvarosi_TC.svg/1200px-Ferencvarosi_TC.svg.png"
-  },
-  {
-    "teamId": "18920313RCS",
-    "name": "CFR Cluj",
-    "foundationDate": "1892-03-13",
-    "country": "Romania",
-    "city": "Cluj-Napoca",
-    "league": "Mlsz",
-    "badge": "https://upload.wikimedia.org/wikipedia/en/7/7e/CFR_Cluj_badge.svg"
+    "badge": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Ferencvarosi_TC.svg/1200px-Ferencvarosi_TC.svg.png",
+    "backdrop": "https://www.fradi.hu/upload/p/zv/3sy64.jpg"
   },
   {
     "teamId": "19100322BRS",
@@ -69,7 +66,8 @@
     "country": "Spain",
     "city": "Barcelona",
     "league": "La_Liga",
-    "badge": "https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png"
+    "badge": "https://upload.wikimedia.org/wikipedia/sco/thumb/4/47/FC_Barcelona_%28crest%29.svg/1010px-FC_Barcelona_%28crest%29.svg.png",
+    "backdrop": "https://i.ytimg.com/vi/wS5KnJNrLVY/maxresdefault.jpg"
   }
 ]
 
