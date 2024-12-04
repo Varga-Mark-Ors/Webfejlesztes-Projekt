@@ -22,4 +22,5 @@ public class Team {
     Country country;
     String city;
     League league;
+    String badge;
 }
