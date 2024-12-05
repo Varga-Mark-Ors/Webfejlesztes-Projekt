@@ -1,0 +1,51 @@
+.team-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .team-detail {
+    text-align: center;
+  }
+  
+  .team-badge img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .team-name h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .team-country h3,
+  .team-city h3,
+  .team-league h3,
+  .team-foundationDate h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .team-country,
+  .team-city,
+  .team-league,
+  .team-foundationDate {
+    margin-bottom: 10px;
+  }
+  
+  .team-country h3, 
+  .team-city h3, 
+  .team-league h3, 
+  .team-foundationDate h3 {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .team-card-container {
+      padding: 15px;
+    }
+  }
+  

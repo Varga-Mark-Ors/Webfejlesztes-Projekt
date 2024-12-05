@@ -7,6 +7,7 @@ import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import Squad from "./components/squad/Squad";
 import Squads from './components/squads/Squads';
+import NotFound from './components/notfound/NotFound';
 
 function App() {
   const [teams, setTeams] = useState([]);
@@ -28,14 +29,13 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        {/* A szülő útvonal most már *-ot tartalmaz */}
-        <Route path="*" element={<Layout />}>
-          {/* Az index útvonal most relatív */}
+        <Route path="/*" element={<Layout />}>
           <Route index element={<Home teams={teams} />} />
-          {/* A gyerek útvonalak relatívak */}
-          <Route path="team/:teamid" element={<Squad teams={teams} />} />
           <Route path="team" element={<Squads teams={teams} />} />
+          <Route path="team/:teamId" element={<Squad teams={teams} />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} /> {/* Global fallback */}
       </Routes>
     </div>
   );
