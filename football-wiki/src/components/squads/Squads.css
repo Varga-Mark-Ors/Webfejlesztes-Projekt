@@ -1,13 +1,27 @@
-.team-card-container {
+/* A konténer, ami tartalmazza az összes csapatot */
+.teams-container {
+    display: flex;
+    flex-direction: column; /* Egyesével jelenítjük meg őket sorban */
+    gap: 20px; /* Térköz a csapatkártyák között */
+  }
+  
+  /* A csapatkártya */
+  .team-card {
+    padding: 20px;
+    margin-bottom: 20px; /* Térköz a kártyák között */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Középre igazítjuk a tartalmat */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .team-detail {
     text-align: center;
+    width: 100%;
   }
   
   .team-badge img {
@@ -34,13 +48,6 @@
   .team-league,
   .team-foundationDate {
     margin-bottom: 10px;
-  }
-  
-  .team-country h3, 
-  .team-city h3, 
-  .team-league h3, 
-  .team-foundationDate h3 {
-    margin: 5px 0;
   }
   
   @media (max-width: 768px) {
