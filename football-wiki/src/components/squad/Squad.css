@@ -1,0 +1,53 @@
+.squad-containteam-container-squad {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Balra igazítja az elemeket */
+  max-width: 300px; /* Limitálja a szélességet, hogy egy Wikipedia-szerű doboz legyen */
+  padding: 10px;
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  }
+  
+  .team-badge-squad {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .team-badge-squad img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-name-squad {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .team-name-squad h4 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+  }
+  
+  .team-details-squad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .team-details-squad p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .team-details-squad strong {
+    color: silver;
+  }

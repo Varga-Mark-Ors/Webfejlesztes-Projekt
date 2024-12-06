@@ -21,8 +21,19 @@ const Squad = ({ teams }) => {
   }
 
   return (
-    <div>
-      <h1>{team.name}</h1>
+    <div className="team-container-squad">
+      <div className="team-badge-squad">
+        <img src={team.badge} alt={`${team.name} logo`} />
+      </div>
+        <div className="team-name-squad">
+        <h4>{team.name}</h4>
+      </div>
+      <div className="team-details-squad">
+        <p><strong>League:</strong> {team.league}</p>
+        <p><strong>Country:</strong> {team.country}</p>
+        <p><strong>City:</strong> {team.city}</p>
+        <p><strong>Founded:</strong> {team.foundationDate}</p>
+      </div>
     </div>
   );
 };
