@@ -1,6 +1,7 @@
 import React from "react";
 import { Paper } from "@mui/material";
 import "./Squads.css";
+import { Link } from "react-router-dom";
 
 const Squads = ({ teams }) => {
   return (
@@ -10,9 +11,11 @@ const Squads = ({ teams }) => {
           <div className="team-badge-squads">
             <img src={team.badge} alt={`${team.name} logo`} />
           </div>
-          <div className="team-name-squads">
-            <h4>{team.name}</h4>
-          </div>
+          <Link to={`/team/${team.teamId}`}>
+            <div className="team-name-squads">
+              <h4>{team.name}</h4>
+            </div>
+          </Link>
           <div className="team-details-squads">
             <p><strong>League:</strong> {team.league}</p>
             <p><strong>Country:</strong> {team.country}</p>

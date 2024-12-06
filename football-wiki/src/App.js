@@ -26,6 +26,22 @@ function App() {
     getTeams();
   }, []);
 
+  const [players, setPlayers] = useState([]);
+
+  const getPlayers = async () => {
+    try {
+      const response = await api.get("/player");
+      console.log("API Response:", response.data);
+      setPlayers(response.data || []);
+    } catch (err) {
+      console.error("Error fetching players:", err);
+    }
+  };
+
+  useEffect(() => {
+    getPlayers();
+  }, []);
+
   return (
     <div className="App">
       <Header />
@@ -34,7 +50,7 @@ function App() {
           <Route index element={<Home teams={teams} />} />
           <Route path="team" element={<Squads teams={teams} />} />
           <Route path="team/:teamId" element={<Squad teams={teams}/>} />
-          <Route path="player" element={<Footballers/>}/>
+          <Route path="player" element={<Footballers players={players}/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="*" element={<NotFound />} /> {/* Global fallback */}
