@@ -19,7 +19,7 @@ const Footballers = ({players}) => {
               <strong>Age:</strong> {player.age}
             </p>
             <p>
-              <strong>Gender:</strong> {player.gender}
+            <p><strong>Gender:</strong> {player.gender ? "Male" : "Female"}</p>
             </p>
             <p>
               <strong>Country:</strong> {player.country}

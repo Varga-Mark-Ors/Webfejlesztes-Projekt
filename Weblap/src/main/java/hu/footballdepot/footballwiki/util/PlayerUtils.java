@@ -7,6 +7,7 @@ import hu.footballdepot.footballwiki.model.Player;
 import lombok.NonNull;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -30,7 +31,7 @@ public class PlayerUtils {
     }
 
     public static int nextAge(){
-        return RANDOM.nextInt(90);
+        return RANDOM.nextInt(40);
     }
 
     public static Boolean nextGender(){
@@ -42,8 +43,9 @@ public class PlayerUtils {
         return countries[RANDOM.nextInt(countries.length)];
     }
 
-    public static double nextHeight(){
-        return RANDOM.nextDouble(1.4,2.2);
+    public static double nextHeight() {
+        double rawHeight = ThreadLocalRandom.current().nextDouble(1.4, 2.2);
+        return Math.round(rawHeight * 100.0) / 100.0;
     }
 
     public static int nextNetWorth(){

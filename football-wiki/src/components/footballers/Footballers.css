@@ -1,49 +1,47 @@
 
   
   .players-container {
-    max-width: 900px; /* Limit content width for readability */
-    margin: 20px auto; /* Center content and add vertical spacing */
+    max-width: 900px; 
+    margin: 20px auto;
     padding: 10px;
-    background-color: #ffffff; /* White background for content */
-    border: 1px solid #d6d6d6; /* Light border like Wikipedia tables */
+    background-color: #ffffff; 
+    border: 1px solid #d6d6d6; 
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern touch */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
   
   .players-row {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #d6d6d6; /* Separator between players */
+    border-bottom: 1px solid #d6d6d6; 
     padding: 15px 0;
   }
   
   .players-row:last-child {
-    border-bottom: none; /* Remove bottom border for the last row */
+    border-bottom: none; 
   }
   
   .players-name h4 {
     margin: 0;
-    font-size: 1.5em; /* Slightly larger font for player names */
-    color: #3366cc; /* Wikipedia-like blue link color */
+    font-size: 1.5em; 
+    color: #3366cc; 
   }
   
   .players-details {
     margin-top: 8px;
     line-height: 1.6;
-    font-size: 0.9em; /* Slightly smaller font for details */
+    font-size: 0.9em; 
   }
   
   .players-details strong {
     color: #202124;
   }
   
-  /* Add hover effect for rows */
   .players-row:hover {
-    background-color: #f1f1f1; /* Light gray hover effect */
+    background-color: #f1f1f1; 
     transition: background-color 0.3s ease;
   }
   
-  /* Mobile-friendly adjustments */
   @media (max-width: 600px) {
     .players-container {
       padding: 10px;

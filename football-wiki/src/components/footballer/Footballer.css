@@ -1,0 +1,33 @@
+.player-card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.player-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.player-details {
+    flex: 1;
+    text-align: left;
+    color: black;
+}
+
+.player-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    border: 2px solid black;
+}
