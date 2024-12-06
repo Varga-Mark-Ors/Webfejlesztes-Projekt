@@ -32,7 +32,7 @@ function App() {
         <Route path="/*" element={<Layout />}>
           <Route index element={<Home teams={teams} />} />
           <Route path="team" element={<Squads teams={teams} />} />
-          <Route path="team/:teamId" element={<Squad teams={teams} />} />
+          <Route path="team/:teamId" element={<Squad teams={teams}/>} />
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="*" element={<NotFound />} /> {/* Global fallback */}

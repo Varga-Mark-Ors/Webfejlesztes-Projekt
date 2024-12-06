@@ -4,16 +4,16 @@ import "./Squads.css";
 
 const Squads = ({ teams }) => {
   return (
-    <div className="teams-container">
+    <div className="teams-container-squads">
       {teams.map((team) => (
-        <Paper key={team.name} className="team-row">
-          <div className="team-badge">
+        <Paper key={team.name} className="team-row-squads">
+          <div className="team-badge-squads">
             <img src={team.badge} alt={`${team.name} logo`} />
           </div>
-          <div className="team-name">
+          <div className="team-name-squads">
             <h4>{team.name}</h4>
           </div>
-          <div className="team-details">
+          <div className="team-details-squads">
             <p><strong>League:</strong> {team.league}</p>
             <p><strong>Country:</strong> {team.country}</p>
             <p><strong>City:</strong> {team.city}</p>

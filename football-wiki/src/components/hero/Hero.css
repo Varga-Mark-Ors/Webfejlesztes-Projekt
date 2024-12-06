@@ -11,6 +11,7 @@
 .team-badge > img {
     height: 100%;
     width: 100%;
+    padding-left: 50px;
 }
 
 .team-card-container{
@@ -36,9 +37,12 @@
 }
 
 .team-name{
-    color: whitesmoke;
+    font-size: 3rem;
     display: flex;
     align-items: center;
+    color: whitesmoke;
+    font-weight: bold;
+    white-space: nowrap; 
 }
 
 .team-buttons-container{

@@ -1,15 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import "./Squad.css";
 
 const Squad = ({ teams }) => {
-  const { teamid } = useParams();
-  console.log("Current teamid from URL:", teamid);
+
+  let params = useParams();
+  let key = params.teamId;
+  
+  console.log("Current teamid from URL:", params);
 
   if (!teams.length) {
     return <div>Loading...</div>;
   }
 
-  const team = teams.find((t) => t.teamId === teamid);
+  const team = teams.find((t) => t.teamId === key);
   console.log("Matched team:", team);
 
   if (!team) {

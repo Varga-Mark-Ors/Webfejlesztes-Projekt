@@ -1,53 +1,60 @@
-.teams-container {
+.teams-container-squads {
   display: flex;
   flex-direction: column; 
   gap: 10px; 
+  align-items: center;
 }
 
-.team-row {
+.team-row-squads {
   display: flex;
   align-items: center;
+  justify-content: center; /* Szöveg középre igazítása */
   padding: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd; 
+  background-color: white;
+  box-shadow: 0 4px 6px #0000001a;
+  border: 1px solid #ddd;
+  width: 100%; /* A teljes szélesség kitöltése */
+  margin: 0; /* Margók eltávolítása */
 }
 
-.team-badge img {
-  height: 60; 
+.team-badge-squads img {
+  height: 80px; 
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.team-name h4 {
+.team-name-squads h4 {
   font-size: 1.5rem;
+  margin-left: 20px;
   margin-right: 20px; 
-  color: gold;
+  color: black;
   font-weight: bold;
   white-space: nowrap; 
 }
 
-.team-details {
+.team-details-squads {
   display: flex;
   gap: 15px; 
 }
 
-.team-details p {
+.team-details-squads p {
   margin: 0;
   font-size: 1rem;
   color: #333;
 }
 
-.team-details strong {
+.team-details-squads strong {
   font-weight: bold;
   color: #555;
 }
 
 @media (max-width: 768px) {
-  .team-row {
-    flex-wrap: wrap; 
+  .team-row-squads {
+    flex-wrap: wrap; /* Flex sorokba törése kis képernyőn */
   }
 
-  .team-name h4,
-  .team-details {
+  .team-name-squads h4,
+  .team-details-squads {
     margin-bottom: 10px;
   }
 }
