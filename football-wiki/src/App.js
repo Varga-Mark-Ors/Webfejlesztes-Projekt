@@ -7,6 +7,7 @@ import Home from "./components/home/Home";
 import Header from "./components/header/Header";
 import Squad from "./components/squad/Squad";
 import Squads from './components/squads/Squads';
+import Footballers from './components/footballers/Footballers'
 import NotFound from './components/notfound/NotFound';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route index element={<Home teams={teams} />} />
           <Route path="team" element={<Squads teams={teams} />} />
           <Route path="team/:teamId" element={<Squad teams={teams}/>} />
+          <Route path="player" element={<Footballers/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="*" element={<NotFound />} /> {/* Global fallback */}

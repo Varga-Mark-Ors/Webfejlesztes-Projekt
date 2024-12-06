@@ -43,7 +43,7 @@ public class PlayerUtils {
     }
 
     public static double nextHeight(){
-        return RANDOM.nextDouble(2.2);
+        return RANDOM.nextDouble(1.4,2.2);
     }
 
     public static int nextNetWorth(){
