@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Footballer.css";
 import { useParams } from "react-router-dom";
 import api from '../../api/axiosConfig';
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Footballer = () => {
-
     let params = useParams();
     let key = params.playerId;
-
     const [player, setPlayer] = useState(null);
 
     const getPlayer = async () => {
@@ -39,6 +36,7 @@ const Footballer = () => {
                         <p><strong>Country:</strong> {player.country}</p>
                         <p><strong>Height:</strong> {player.height} cm</p>
                         <p><strong>Net Worth:</strong> ${player.netWorth}</p>
+                        <Link to="/player">Back to Players</Link>
                     </div>
                     <img 
                         className="player-image"
