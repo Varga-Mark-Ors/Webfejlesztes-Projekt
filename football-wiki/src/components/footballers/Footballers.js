@@ -1,14 +1,25 @@
 import React from "react";
-import "./Footballers.css";
+import "./Footballers.css"; // CSS importálása
 import Paper from "@mui/material/Paper"; 
 import { Link } from "react-router-dom";
 
-const Footballers = ({players}) => {
-  
+const Footballers = ({ players }) => {
   return (
     <div className="players-container">
       {players.map((player) => (
-        <Paper key={player.name} className="players-row">
+        <Paper 
+          key={player.name} 
+          className="players-row"
+          sx={{
+            backgroundColor: "#333333",
+            color: "gold",
+            border: "1px solid gold",
+            borderRadius: "5px",
+            "&:hover": {
+              backgroundColor: "#4d4d4d",
+            },
+          }}
+        >
           <Link to={`/player/${player.idNumber}`}>
             <div className="players-name">
               <h4>{player.name}</h4>
@@ -19,7 +30,7 @@ const Footballers = ({players}) => {
               <strong>Age:</strong> {player.age}
             </p>
             <p>
-            <p><strong>Gender:</strong> {player.gender ? "Male" : "Female"}</p>
+              <strong>Gender:</strong> {player.gender ? "Male" : "Female"}
             </p>
             <p>
               <strong>Country:</strong> {player.country}
