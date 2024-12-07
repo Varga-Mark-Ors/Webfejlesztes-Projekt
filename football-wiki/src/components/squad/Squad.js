@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./Squad.css";
+import { Link } from "react-router-dom";
+
 
 const Squad = ({ teams }) => {
 
@@ -33,6 +35,7 @@ const Squad = ({ teams }) => {
         <p><strong>Country:</strong> {team.country}</p>
         <p><strong>City:</strong> {team.city}</p>
         <p><strong>Founded:</strong> {team.foundationDate}</p>
+        <Link to="/team">Back to the teams</Link>
       </div>
     </div>
   );

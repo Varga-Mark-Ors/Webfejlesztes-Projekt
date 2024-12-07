@@ -36,7 +36,7 @@ const Footballer = () => {
                         <p><strong>Country:</strong> {player.country}</p>
                         <p><strong>Height:</strong> {player.height} cm</p>
                         <p><strong>Net Worth:</strong> ${player.netWorth}</p>
-                        <Link to="/player">Back to Players</Link>
+                        <Link to="/player">Back to the players</Link>
                     </div>
                     <img 
                         className="player-image"
