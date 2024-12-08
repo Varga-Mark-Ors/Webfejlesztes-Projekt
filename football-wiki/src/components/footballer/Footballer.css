@@ -36,6 +36,37 @@
     border: 2px solid black;
 }
 
+.back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px; 
+    margin-right: 10px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px; 
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
 @media (max-width: 600px) {
     .player-card {
         flex-direction: column;

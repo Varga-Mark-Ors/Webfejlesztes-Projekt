@@ -32,7 +32,7 @@ public class PlayerUtils {
     }
 
     public static int nextAge(){
-        return RANDOM.nextInt(40);
+        return RANDOM.nextInt(16,40);
     }
 
     public static Boolean nextGender(){

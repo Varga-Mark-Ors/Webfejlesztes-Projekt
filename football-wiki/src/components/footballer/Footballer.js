@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Footballer.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom"; 
 import api from '../../api/axiosConfig';
-import { Link } from "react-router-dom";
 
 const Footballer = () => {
     let params = useParams();
     let key = params.playerId;
     const [player, setPlayer] = useState(null);
+    const navigate = useNavigate(); 
 
     const getPlayer = async () => {
         try {
@@ -15,6 +15,16 @@ const Footballer = () => {
             setPlayer(response.data || {});
         } catch (err) {
             console.error("Error fetching player:", err);
+        }
+    };
+
+    const deletePlayer = async () => {
+        try {
+            await api.delete(`/player/${key}`); 
+            navigate("/player"); 
+            window.location.reload();
+        } catch (err) {
+            console.error("Error deleting player:", err);
         }
     };
 
@@ -37,7 +47,14 @@ const Footballer = () => {
                         <p><strong>Country:</strong> {player.country}</p>
                         <p><strong>Height:</strong> {player.height} cm</p>
                         <p><strong>Net Worth:</strong> ${player.netWorth}</p>
-                        <Link to="/player">Back to the players</Link>
+                        <button 
+                            className="back-button" 
+                            onClick={() => navigate("/player")}>
+                            Back to the players
+                        </button>
+                        <button className="delete-button" onClick={deletePlayer}>
+                            Delete Player
+                        </button> 
                     </div>
                     <img 
                         className="player-image"
