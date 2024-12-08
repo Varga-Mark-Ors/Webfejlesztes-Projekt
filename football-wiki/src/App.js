@@ -10,10 +10,13 @@ import Footballer from "./components/footballer/Footballer";
 import NotFound from './components/notfound/NotFound';
 import useTeams from "./hooks/UseTeams";
 import usePlayers from "./hooks/UsePlayers";
+import useContracts from './hooks/UseContracts';
+import Contract from "./components/contract/Contract";
 
 function App() {
   const teams = useTeams();
   const players = usePlayers();
+  const contracts = useContracts();
 
   return (
     <div className="App">
@@ -25,6 +28,7 @@ function App() {
           <Route path="team/:teamId" element={<Squad teams={teams} />} />
           <Route path="player" element={<Footballers players={players} />} />
           <Route path="player/:playerId" element={<Footballer />} />
+          <Route path="contract" element={<Contract contracts={contracts}/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="*" element={<NotFound />} /> {/* Global fallback */}
