@@ -1,6 +1,7 @@
 package hu.footballdepot.footballwiki;
 
 import hu.footballdepot.footballwiki.model.Country;
+import hu.footballdepot.footballwiki.model.Position;
 import hu.footballdepot.footballwiki.repository.PlayerRepository;
 import hu.footballdepot.footballwiki.util.PlayerUtils;
 import lombok.AllArgsConstructor;
@@ -24,7 +25,8 @@ public class PlayerRunner
                 Boolean.TRUE,
                 Country.Portugal,
                 1.9,
-                10000000
+                10000000,
+                Position.Forward
         ));
         for (int i = 0; i < 80; i++){
             repository.save(PlayerUtils.nextPlayer());

@@ -4,6 +4,7 @@ package hu.footballdepot.footballwiki.util;
 import com.github.javafaker.Faker;
 import hu.footballdepot.footballwiki.model.Country;
 import hu.footballdepot.footballwiki.model.Player;
+import hu.footballdepot.footballwiki.model.Position;
 import lombok.NonNull;
 
 import java.util.Random;
@@ -52,13 +53,19 @@ public class PlayerUtils {
         return RANDOM.nextInt(100000, 1000000000);
     }
 
+    public static Position nextPosition() {
+        Position[] positions = Position.values();
+        return positions[RANDOM.nextInt(positions.length)];
+    }
+
     public static Player nextPlayer(){
         return nextPlayer(nextIdNumber(),
                 nextAge(),
                 nextGender(),
                 nextCountry(),
                 nextHeight(),
-                nextNetWorth());
+                nextNetWorth(),
+                nextPosition());
     }
 
     public static Player nextPlayer(
@@ -67,7 +74,8 @@ public class PlayerUtils {
             @NonNull Boolean gender,
             @NonNull Country country, // Az Enum típust használjuk itt
             @NonNull Double height,
-            @NonNull int netWorth) {
+            @NonNull int netWorth,
+            @NonNull Position position) {
 
         final var name = FAKER.name();
         return Player.builder()
@@ -78,6 +86,7 @@ public class PlayerUtils {
                 .country(country) // Az Enum értékét állítjuk be
                 .height(height)
                 .netWorth(netWorth)
+                .position(position)
                 .build();
     }
 

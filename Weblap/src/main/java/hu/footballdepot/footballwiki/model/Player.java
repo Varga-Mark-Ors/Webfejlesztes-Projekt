@@ -22,4 +22,5 @@ public class Player {
     Country country;
     double height;
     int netWorth;
+    Position position;
 }

@@ -33,6 +33,7 @@ const Footballer = () => {
                         <h2>{player.name}</h2>
                         <p><strong>Age:</strong> {player.age}</p>
                         <p><strong>Gender:</strong> {player.gender ? "Male" : "Female"}</p>
+                        <p><strong>Position:</strong> {player.position}</p>
                         <p><strong>Country:</strong> {player.country}</p>
                         <p><strong>Height:</strong> {player.height} cm</p>
                         <p><strong>Net Worth:</strong> ${player.netWorth}</p>
