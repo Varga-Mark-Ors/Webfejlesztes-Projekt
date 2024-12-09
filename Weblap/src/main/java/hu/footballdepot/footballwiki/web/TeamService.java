@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.Optional;
 
 @RestController
 @AllArgsConstructor
+@Service
 public class TeamService implements TeamController{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TeamService.class);
