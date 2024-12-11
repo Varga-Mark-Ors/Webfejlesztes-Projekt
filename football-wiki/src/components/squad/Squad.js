@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./Squad.css";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,7 @@ const Squad = ({ teams }) => {
 
   let params = useParams();
   let key = params.teamId;
+  const navigate = useNavigate(); 
   
   console.log("Current teamid from URL:", params);
 
@@ -24,18 +25,24 @@ const Squad = ({ teams }) => {
 
   return (
     <div className="team-container-squad">
-      <div className="team-badge-squad">
-        <img src={team.badge} alt={`${team.name} logo`} />
-      </div>
-        <div className="team-name-squad">
-        <h4>{team.name}</h4>
-      </div>
-      <div className="team-details-squad">
-        <p><strong>League:</strong> {team.league}</p>
-        <p><strong>Country:</strong> {team.country}</p>
-        <p><strong>City:</strong> {team.city}</p>
-        <p><strong>Founded:</strong> {team.foundationDate}</p>
-        <Link to="/team">Back to the teams</Link>
+      <div className="team-container-card">
+        <div className="team-badge-squad">
+          <img src={team.badge} alt={`${team.name} logo`} />
+        </div>
+          <div className="team-name-squad">
+          <h4>{team.name}</h4>
+        </div>
+        <div className="team-details-squad">
+          <p><strong>League:</strong> {team.league}</p>
+          <p><strong>Country:</strong> {team.country}</p>
+          <p><strong>City:</strong> {team.city}</p>
+          <p><strong>Founded:</strong> {team.foundationDate}</p>
+          <button 
+                              className="back-button" 
+                              onClick={() => navigate("/team")}>
+                              Back to the teams
+                          </button>
+        </div>
       </div>
     </div>
   );

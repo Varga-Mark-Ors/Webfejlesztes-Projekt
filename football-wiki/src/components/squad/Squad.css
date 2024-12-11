@@ -1,14 +1,13 @@
-.squad-containteam-container-squad {
+.team-container-squad {
     display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  max-width: 400px; 
-  padding: 10px;
-  background-color: #eaeaea;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .team-badge-squad {
