@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from './components/Layout';
 import Home from "./components/home/Home";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import Squad from "./components/squad/Squad";
 import Squads from './components/squads/Squads';
 import Footballers from './components/footballers/Footballers';
@@ -33,6 +34,7 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound />} /> {/* Global fallback */}
       </Routes>
+      <Footer />
     </div>
   );
 }
