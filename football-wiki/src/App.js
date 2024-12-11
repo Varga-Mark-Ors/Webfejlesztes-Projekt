@@ -26,7 +26,7 @@ function App() {
         <Route path="/*" element={<Layout />}>
           <Route index element={<Home teams={teams} />} />
           <Route path="team" element={<Squads teams={teams} />} />
-          <Route path="team/:teamId" element={<Squad teams={teams} />} />
+          <Route path="team/:teamId" element={<Squad teams={teams} contracts={contracts} />} />
           <Route path="player" element={<Footballers players={players} />} />
           <Route path="player/:playerId" element={<Footballer />} />
           <Route path="contract" element={<Contract contracts={contracts}/>}/>

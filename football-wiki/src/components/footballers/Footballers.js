@@ -42,7 +42,7 @@ const Footballers = ({ players }) => {
               <strong>Height:</strong> {player.height}
             </p>
             <p>
-              <strong>Net Worth:</strong> {player.netWorth}
+              <strong>Net Worth:</strong> {player.netWorth} $
             </p>
           </div>
         </Paper>
