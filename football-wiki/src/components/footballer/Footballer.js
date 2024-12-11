@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Footballer.css";
-import { useParams, useNavigate } from "react-router-dom"; 
+import { useParams, useNavigate, Link } from "react-router-dom"; 
 import api from '../../api/axiosConfig';
 
-const Footballer = () => {
+const Footballer = ({ contracts }) => {
     let params = useParams();
     let key = params.playerId;
     const [player, setPlayer] = useState(null);
@@ -47,6 +47,11 @@ const Footballer = () => {
                         <p><strong>Country:</strong> {player.country}</p>
                         <p><strong>Height:</strong> {player.height} cm</p>
                         <p><strong>Net Worth:</strong> ${player.netWorth}</p>
+                        {contracts.map((contract) =>
+                            contract.player.idNumber === player.idNumber ? ( 
+                                <p><strong>Plays for: </strong> <Link to={`/team/${contract.team.teamId}`}>{contract.team.name}</Link></p>
+                            ) : null 
+                        )}
                         <button 
                             className="back-button" 
                             onClick={() => navigate("/player")}>

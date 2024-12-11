@@ -28,7 +28,7 @@ function App() {
           <Route path="team" element={<Squads teams={teams} />} />
           <Route path="team/:teamId" element={<Squad teams={teams} contracts={contracts} />} />
           <Route path="player" element={<Footballers players={players} />} />
-          <Route path="player/:playerId" element={<Footballer />} />
+          <Route path="player/:playerId" element={<Footballer contracts={contracts}/>} />
           <Route path="contract" element={<Contract contracts={contracts}/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
