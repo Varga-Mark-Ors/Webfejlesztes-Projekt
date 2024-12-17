@@ -20,6 +20,11 @@ public interface PlayerController {
             @NonNull @RequestBody Player player
     );
 
+    @PutMapping ("/player/update")
+    Player updateOne(
+            @NonNull @RequestBody Player player
+    );
+
     @DeleteMapping("/player/{idNumber}")
     void deleteOne(
             @NonNull @PathVariable String idNumber

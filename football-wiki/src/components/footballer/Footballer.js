@@ -60,6 +60,11 @@ const Footballer = ({ contracts }) => {
                         <button className="delete-button" onClick={deletePlayer}>
                             Delete Player
                         </button> 
+                        <button 
+                            className="update-button"
+                            onClick={() => navigate(`/player/update/${player.idNumber}`)}>
+                                Update player
+                        </button>
                     </div>
                     <img 
                         className="player-image"

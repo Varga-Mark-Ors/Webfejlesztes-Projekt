@@ -67,6 +67,22 @@
     background-color: darkred;
 }
 
+.update-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px; 
+    margin-left: 10px;
+}
+
+.update-button:hover {
+    background-color: darkgreen;
+}
+
 @media (max-width: 600px) {
     .player-card {
         flex-direction: column;

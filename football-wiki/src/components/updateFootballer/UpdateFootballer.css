@@ -1,0 +1,71 @@
+.update-footballer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.update-footballer h1 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.update-footballer form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.update-footballer label {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.update-footballer input, 
+.update-footballer select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+}
+
+.update-footballer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.update-footballer button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .update-footballer {
+        padding: 10px;
+    }
+
+    .update-footballer input, 
+    .update-footballer select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .update-footballer button {
+        font-size: 14px;
+    }
+}

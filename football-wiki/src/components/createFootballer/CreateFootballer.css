@@ -1,0 +1,71 @@
+.create-footballer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.create-footballer h1 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.create-footballer form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.create-footballer label {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.create-footballer input, 
+.create-footballer select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+}
+
+.create-footballer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.create-footballer button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .create-footballer {
+        padding: 10px;
+    }
+
+    .create-footballer input, 
+    .create-footballer select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .create-footballer button {
+        font-size: 14px;
+    }
+}

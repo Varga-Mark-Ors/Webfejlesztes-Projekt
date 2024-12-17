@@ -41,6 +41,12 @@ public class PlayerService implements PlayerController{
                 .withIdNumber(PlayerUtils.nextIdNumber()));
     }
 
+    @Override
+    public Player updateOne(@NonNull Player player) {
+        LOGGER.info("updateOne({})", player);
+        return playerRepository.save(player);
+    }
+
     @Transactional
     @Override
     public void deleteOne(@NonNull String idNumber) {

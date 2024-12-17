@@ -50,7 +50,7 @@ public class PlayerUtils {
     }
 
     public static int nextNetWorth(){
-        return RANDOM.nextInt(100000, 1000000000);
+        return RANDOM.nextInt(100000, 1000000);
     }
 
     public static Position nextPosition() {
