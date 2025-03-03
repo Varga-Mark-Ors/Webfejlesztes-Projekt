@@ -16,24 +16,20 @@ A comprehensive football database similar to Wikipedia, where users can manage p
 Ensure you have the following installed on your system:
 - **Java** (Required for backend functionality)
 - **Node.js & npm** (Required for frontend development)
+- **IntelliJ IDEA** (Community vagy Ultimate)
 
 ### Steps to Run the Project
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/your-repository/football-wikipedia.git
-   cd football-wikipedia
+   git clone https://github.com/Varga-Mark-Ors/Webfejlesztes-Projekt
+   cd Webfejlesztes-Projekt
    ```
 
 2. **Start the Backend**
-   - Navigate to the `Weblap` folder:
-     ```sh
-     cd Weblap
-     ```
-   - Run the application using Java:
-     ```sh
-     java -jar Application.java
-     ```
+   - Open the `Weblap` folder in IntelliJ IDEA:
+     
+   - Run the Application.java:
 
 3. **Start the Frontend**
    - Open the `football-wiki` folder in Visual Studio Code:
