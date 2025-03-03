@@ -27,9 +27,9 @@ Ensure you have the following installed on your system:
    ```
 
 2. **Start the Backend**
-   - Open the `Weblap` folder in IntelliJ IDEA:
+   - Open the `Weblap` folder in IntelliJ IDEA
      
-   - Run the Application.java:
+   - Run the Application.java
 
 3. **Start the Frontend**
    - Open the `football-wiki` folder in Visual Studio Code:
