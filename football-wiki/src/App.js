@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/*" element={<Layout />}>
+        <Route path="/Webfejlesztes-Projekt/*" element={<Layout />}>
           <Route index element={<Home teams={teams} />} />
           <Route path="team" element={<Squads teams={teams} />} />
           <Route path="team/:teamId" element={<Squad teams={teams} contracts={contracts} />} />

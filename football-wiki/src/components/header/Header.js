@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <Navbar bg = "dark" variant = "dark" expands = "lg">
             <Container fluid>
-                <Navbar.Brand href="/" style={{"color":'gold'}}>
+                <Navbar.Brand href="https://varga-mark-ors.github.io/Webfejlesztes-Projekt/" style={{"color":'gold'}}>
                     <FontAwesomeIcon icon ={faFutbol} /> Wiki
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -21,9 +21,9 @@ const Header = () => {
                             style={{maxHeight:`100px`}}
                             navbarScroll
                         >
-                        <NavLink className="nav-link" to= "/">Home</NavLink>
-                        <NavLink className="nav-link" to="/team">Team</NavLink>
-                        <NavLink className="nav-link" to= "/player">Players</NavLink>
+                        <NavLink className="nav-link" to= "/Webfejlesztes-Projekt/">Home</NavLink>
+                        <NavLink className="nav-link" to="/Webfejlesztes-Projekt/team">Team</NavLink>
+                        <NavLink className="nav-link" to= "/Webfejlesztes-Projekt/player">Players</NavLink>
                     </Nav>
                     <Button variant="outline-info" className="me-2">Login</Button>
                     <Button variant="outline-info" className="me-2">Register</Button>

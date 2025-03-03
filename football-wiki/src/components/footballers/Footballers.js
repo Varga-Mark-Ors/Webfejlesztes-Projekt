@@ -14,7 +14,7 @@ const Footballers = ({ players }) => {
       <div className="players-container">
         <button
           className="create-button"
-          onClick={() => navigate("/player/create")}>
+          onClick={() => navigate("/Webfejlesztes-Projekt/player/create")}>
             Create a footballer
         </button>
         {players.map((player) => (
@@ -31,7 +31,7 @@ const Footballers = ({ players }) => {
               },
             }}
           >
-            <Link to={`/player/${player.idNumber}`}>
+            <Link to={`/Webfejlesztes-Projekt/player/${player.idNumber}`}>
               <div className="players-name">
                 <h4>{player.name}</h4>
               </div>

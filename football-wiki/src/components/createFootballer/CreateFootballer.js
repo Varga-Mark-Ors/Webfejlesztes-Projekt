@@ -39,7 +39,7 @@ function CreateFootballer() {
         };
 
         try {
-            const response = await api.post('/player/add', playerData);
+            const response = await api.post('/Webfejlesztes-Projekt/player/add', playerData);
             alert(`Player created successfully: ${JSON.stringify(response.data)}`);
             navigate("/player"); 
             window.location.reload();

@@ -15,7 +15,7 @@ const Squads = ({ teams }) => {
           <div className="teams-badge">
             <img src={team.badge} alt={`${team.name} logo`} />
           </div>
-          <Link to={`/team/${team.teamId}`}>
+          <Link to={`/Webfejlesztes-Projekt/team/${team.teamId}`}>
             <div className="teams-name">
               <h4>{team.name}</h4>
             </div>

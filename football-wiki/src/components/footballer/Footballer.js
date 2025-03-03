@@ -21,7 +21,7 @@ const Footballer = ({ contracts }) => {
     const deletePlayer = async () => {
         try {
             await api.delete(`/player/${key}`); 
-            navigate("/player"); 
+            navigate("/Webfejlesztes-Projekt/player"); 
             window.location.reload();
         } catch (err) {
             console.error("Error deleting player:", err);
@@ -49,12 +49,12 @@ const Footballer = ({ contracts }) => {
                         <p><strong>Net Worth:</strong> ${player.netWorth}</p>
                         {contracts.map((contract) =>
                             contract.player.idNumber === player.idNumber ? ( 
-                                <p><strong>Plays for: </strong> <Link to={`/team/${contract.team.teamId}`}>{contract.team.name}</Link></p>
+                                <p><strong>Plays for: </strong> <Link to={`/Webfejlesztes-Projekt/team/${contract.team.teamId}`}>{contract.team.name}</Link></p>
                             ) : null 
                         )}
                         <button 
                             className="back-button" 
-                            onClick={() => navigate("/player")}>
+                            onClick={() => navigate("/Webfejlesztes-Projekt/player")}>
                             Back to the players
                         </button>
                         <button className="delete-button" onClick={deletePlayer}>
@@ -62,7 +62,7 @@ const Footballer = ({ contracts }) => {
                         </button> 
                         <button 
                             className="update-button"
-                            onClick={() => navigate(`/player/update/${player.idNumber}`)}>
+                            onClick={() => navigate(`/Webfejlesztes-Projekt/player/update/${player.idNumber}`)}>
                                 Update player
                         </button>
                     </div>

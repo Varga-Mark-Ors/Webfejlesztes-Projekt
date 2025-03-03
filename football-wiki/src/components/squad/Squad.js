@@ -47,7 +47,7 @@ const Squad = ({ teams, contracts}) => {
           contract.team.teamId === team.teamId ? ( 
             <div key={contract.id} className="contract-card">
               <div className="players-row">
-                <Link to={`/player/${contract.player.idNumber}`}>
+                <Link to={`/Webfejlesztes-Projekt/player/${contract.player.idNumber}`}>
                   <div className="players-name">
                     <h4>{contract.player.name}</h4>
                   </div>

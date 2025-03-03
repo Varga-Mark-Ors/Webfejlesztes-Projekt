@@ -22,7 +22,7 @@ const Hero = ({ teams }) => {
                                         <h4>{team.name}</h4>
                                     </div>
                                     <div className="team-buttons-container">
-                                        <Link to={`/team/${team.teamId}`}>
+                                        <Link to={`/Webfejlesztes-Projekt/team/${team.teamId}`}>
                                             <div className="team-button-icon-container">
                                                 <FontAwesomeIcon
                                                     className="team-button-icon"
