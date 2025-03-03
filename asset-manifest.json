@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Webfejlesztes-Projekt/static/css/main.c35e5765.css",
-    "main.js": "/Webfejlesztes-Projekt/static/js/main.a49a29af.js",
+    "main.js": "/Webfejlesztes-Projekt/static/js/main.d93926c7.js",
     "index.html": "/Webfejlesztes-Projekt/index.html",
     "main.c35e5765.css.map": "/Webfejlesztes-Projekt/static/css/main.c35e5765.css.map",
-    "main.a49a29af.js.map": "/Webfejlesztes-Projekt/static/js/main.a49a29af.js.map"
+    "main.d93926c7.js.map": "/Webfejlesztes-Projekt/static/js/main.d93926c7.js.map"
   },
   "entrypoints": [
     "static/css/main.c35e5765.css",
-    "static/js/main.a49a29af.js"
+    "static/js/main.d93926c7.js"
   ]
 }
